@@ -145,7 +145,7 @@ public class AppearanceConfig {
         boolean isExpanded, int visibleExtensions) {
         int expandCollapseRules = Integer.parseInt(PreferenceManager.
             getDefaultSharedPreferences(context)
-            .getString(PREF_COLLAPSE_CONDITIONS, "-1"));
+            .getString(PREF_COLLAPSE_CONDITIONS, "1"));
 
         switch (expandCollapseRules) {
             case EXPAND_DEFAULT:
@@ -186,7 +186,7 @@ public class AppearanceConfig {
         try {
             if (target == DashClockRenderer.Options.TARGET_HOME_SCREEN) {
                 opacity = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(context)
-                        .getString(PREF_HOMESCREEN_BACKGROUND_OPACITY, "50"));
+                        .getString(PREF_HOMESCREEN_BACKGROUND_OPACITY, "0"));
             } else if (target == DashClockRenderer.Options.TARGET_LOCK_SCREEN) {
                 opacity = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(context)
                         .getString(PREF_LOCKSCREEN_BACKGROUND_OPACITY, "0"));

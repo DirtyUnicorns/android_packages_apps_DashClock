@@ -36,7 +36,7 @@
         android:entryValues="@array/pref_collapse_conditions_values"
         android:entries="@array/pref_collapse_conditions_names"
         android:title="@string/pref_collapse_conditions_title"
-        android:defaultValue="-1" />
+        android:defaultValue="1" />
 
     <CheckBoxPreference
         android:key="pref_aggressive_centering"
@@ -69,7 +69,7 @@
             android:entries="@array/pref_background_opacity_display_names"
             android:title="@string/pref_background_title"
             android:dialogTitle="@string/pref_background_opacity_title"
-            android:defaultValue="50"
+            android:defaultValue="0"
             android:negativeButtonText="@null"
             android:positiveButtonText="@null" />
 
